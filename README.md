@@ -1,6 +1,6 @@
 # ROB 535 Course Project: Perception (Fall 2018)
 
-The course, ROB 535 (Self Driving Cars: Perception and Control), is one of the autonomous vehicle courses offered at University of Michigan. In Fall 2018 semester, the final project contains two independent parts: **Perception** and **Control**, each part with two tasks. This repo contains a step-by-step tutorial from our team for the **Perception** part. A more brief PDF report can be found [here](https://github.com/xuwenzhe/rob535-control).
+The course, ROB 535 (Self Driving Cars: Perception and Control), is one of the autonomous vehicle courses offered at University of Michigan. In Fall 2018 semester, the final project contains two independent parts: **Perception** and **Control**, each part with two tasks. This repo contains a step-by-step tutorial from our team for the **Perception** part. A more brief PDF report can be found [here](./report/rob535-perception-report.pdf).
 
 For the **Control** part, check out [this repo](https://github.com/xuwenzhe/rob535-control).
 
@@ -50,9 +50,9 @@ Their average Precision and average Recall during training are shown below.
 
 ![](./figs/incep-recall.png)
 
-![](./figs/incep-recall.png)
+![](./figs/incep-precision.png)
 
-LightGBM is used then to blend classification results based on CNN predicted features, including bounding box locations, widths, heights, area, ratio, and classification confidence score. The blended submission is scored at 0.74268 on the leaderboard, which is ranked 3rd among all participated teams. Considering this submission only uses 2D image data, the approach is effective. The importance of features can be generated using lightGBM, shown below.
+LightGBM is used then to combine classification results based on CNN predicted features, including bounding box locations, widths, heights, area, ratio, and classification confidence score. The blended submission is scored at 0.74268 on the leaderboard, which is ranked 3rd among all participated teams. Considering this submission only uses 2D image data, the approach is effective. The importance of features can be generated using lightGBM, shown below.
 
 ![](./figs/lgb-importance.png)
 
